@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+
+  <!-- W3.CSS desde CDN -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+
+  <div class="calc-wrapper w3-card-4">
+
+    <!-- Pantalla -->
+    <div class="screen">
+      <div class="expresion" id="expresion"></div>
+      <div class="resultado" id="resultado">0</div>
+    </div>
+
+    <!-- Botones -->
+    <div class="grid">
+
+      <!-- Fila 1 -->
+      <button class="btn btn-ac" data-action="ac">AC</button>
+      <button class="btn btn-ac" data-action="delete">⌫</button>
+      <button class="btn btn-op" data-operator="%">%</button>
+      <button class="btn btn-op" data-operator="/">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn btn-op" data-operator="*">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn btn-op" data-operator="-">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn btn-op" data-operator="+">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn btn-zero" data-value="0">0</button>
+      <button class="btn" data-action="decimal">.</button>
+      <button class="btn btn-eq" data-action="equals">=</button>
+
+    </div>
+  </div>
+
+  <!-- Lógica de la calculadora (al final del body para que el DOM ya exista) -->
+  <script src="calculadora.js"></script>
+
+</body>
+</html>
