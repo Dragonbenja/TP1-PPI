@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MDN Breakout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="gameWrap">
+    <div id="ui">
+      <div class="stat">Puntuación<span id="scoreVal">0</span></div>
+      <div class="stat">Vidas<span id="livesVal">3</span></div>
+      <div class="stat">Nivel<span id="levelVal">1</span></div>
+    </div>
+
+    <div id="canvasWrap">
+      <canvas id="gameCanvas" width="480" height="320"></canvas>
+      <div id="msgOverlay">
+        <h3>MDN Breakout</h3>
+        <p>← → o mouse para mover la paleta</p>
+        <button id="startBtn">Jugar</button>
+      </div>
+    </div>
+
+    <div id="controls">Teclado: ← → &nbsp;|&nbsp; Mouse: mover sobre el canvas</div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
